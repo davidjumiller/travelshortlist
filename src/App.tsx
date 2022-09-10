@@ -37,7 +37,7 @@ function Header() {
   return (
     <header className="bg-amber-300 drop-shadow-md">
       <div className="container flex flex-row justify-between items-center mx-auto text-white">
-        <input className="flex text-lg font-extrabold w-1/3 uppercase" type="text" id="city-search" placeholder="Enter a city..."/>
+        <input className="flex text-lg font-extrabold uppercase" type="text" id="city-search" placeholder="Enter a city..."/>
         <div className="">
           <ul className="flex flex-row uppercase">
             <li><a href="#" className="block mx-4">Sign in</a></li>
@@ -50,12 +50,12 @@ function Header() {
 
 function Content() {
   return (
-    <div className="container mx-auto flex-auto">
+    <div className="container mx-auto flex-auto px-5">
       <div className="my-8">
         <h1 className="text-3xl">Hotels 🏨</h1>
         <hr className="w-1/3" />
         <div className="my-5" id="hotelsList">
-          <Carousel responsive={responsive} infinite={true}>
+          <Carousel responsive={responsive} infinite={true} renderButtonGroupOutside={true}>
           <div><ExampleCard /></div>
           <div><ExampleCard /></div>
           <div><ExampleCard /></div>

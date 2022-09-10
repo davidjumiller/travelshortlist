@@ -17,7 +17,7 @@
     outline: 0;
     font-size: 2.3rem;
     color: white;
-    padding: 7px 0;
+    padding: 7px;
     margin-top: 7px;
     background: transparent;
     transition: border-color 0.2s;
@@ -29,8 +29,20 @@
   #city-search:focus {
     border-bottom: 3px solid white;
   }
-  /* reset input */
-  #city-search{
-    &:required,&:invalid { box-shadow:none; }
-  }
+}
+
+.react-multi-carousel-list {
+  margin: 0px 35px !important;
+  position: inherit !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + 1px) !important;
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + 1px) !important;
+}
+.react-multiple-carousel__arrow {
+  border-radius: 0px !important;
+  min-width: 33px !important;
+  min-height: 58px !important;
 }
