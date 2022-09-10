@@ -51,7 +51,7 @@ function Header() {
 function Content() {
   return (
     <div className="container mx-auto flex-auto px-5">
-      <div className="my-8">
+      <div className="my-10">
         <h1 className="text-3xl">Hotels 🏨</h1>
         <hr className="w-1/3" />
         <div className="my-5" id="hotelsList">
@@ -105,9 +105,12 @@ function ExampleCard() {
 function Footer() {
   return (
     <footer className="bg-slate-500">
-      <div className="container mx-auto grow">
-        <div className="min-h-min">
-          <p>Footer</p>
+      <div className="container mx-auto text-white text-center">
+        <div className="py-10">
+          <p>Copyright © 2022 Travelshortlist.org All rights reserved.</p>
+          <ul className="inline text-amber-200 hover:text-white hover:ease-in duration-200">
+            <li className="py-2"><a href="https://github.com/davidjumiller/travelshortlist">Github</a></li>
+          </ul>
         </div>
       </div>
     </footer>
